@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    gap: 100px 20px;        /* fixed */
+    justify-content: center;
+    background-color: #f8f7f3;
+    max-width: 1280px;      /* fixed */
+}
+
+header{
+    height: 40px;   /* fixed */
+    width: 100%;    /* fixed */
+
+    font-family: "Montserrat";
+    font-size: 12px;        /* fixed */
+    color: #f8f7f3;
+    letter-spacing: 0.2em;      /* fixed */
+    font-weight: regular;       /* fixed */
+    text-align: left;
+    background-color: #1a24fb;
+    line-height: 40px;
+}
+.book{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+    max-width: 363px;
+    min-height: 400px;
+  
+    padding: 40px;      /* fixed */
+    border: 1px solid blue;
+}
+
+h2{
+    font-size: 12px;        /* fixed */
+    letter-spacing: 0.2em;      /* fixed */
+    font-weight: 500;        /* fixed */
+    font-family: "montserrat";
+    color: #1a24fb;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-size: 36px;        /* fixed */
+    font-weight: 700;      /* fixed */
+    font-family: "montserrat";
+    color: #1a24fb;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 16px;        /* fixed */
+    font-weight: 500;        /* fixed */
+    font-family: "overpass";
+    color: #1a24fb;
+    padding-top: 10px;
+}
+
+.number{
+    width: 40px;        /* fixed */
+    height: 40px;       /* fixed */
+    position: absolute;
+    top: 5px;
+    right: -10px;
+
+    color: #1a24fb;
+    font-size: 24px;        /* fixed */
+    font-family: montserrat;
+    font-weight: bold;
+}
+
+button{
+    color: #1a24fb;
+    border: none;
+    box-shadow: none;
+    background-color: #f8f7f3;
+    
+    width: 100%;        /* fixed */
+    height: 18px;       /* fixed */
+
+    font-size: 14px;        /* fixed */
+
+    position: absolute;
+    bottom: -30px;
+    align-self: center;
+    text-align: left;
+  
+
+
+}
+
+button:hover{
+    color: #f8f7f3;
+    background-color: #1a24fb;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 360px) {
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .book {
+        max-width: 317px;
+        min-height: 400px;
+    }
+}
